@@ -7,10 +7,10 @@ import Button from "../components/Button.astro";
 
 <Layout>
   <div class="flex flex-col place-items-center justify-center">
-    <div class="grid grid-cols-2 place-items-center px-32 py-32 gap-18">
+    <div class="grid grid-cols-2 place-items-center px-64 py-32 gap-18">
       <!-- left -->
       <div class="space-y-12">
-        <h1 class="text-8xl">
+        <h1 class="text-7xl">
           Financial literacy <span class="text-secondary">for all</span>
         </h1>
         <p class="text-lead">
@@ -20,7 +20,8 @@ import Button from "../components/Button.astro";
         </p>
       </div>
       <!-- right -->
-      <div class="p-6 pb-2 rounded-lg bg-white space-y-2 rotate-2">
+      <div class="p-6 pb-2 rounded-lg bg-white space-y-2 rotate-2 hover:rotate-0 hover:scale-105 transition-transform relative">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-green-200/80 w-32 h-8"></div>
         <Img src={banner} class="rounded-xl" />
         <p class="text-caption text-center">Add a caption here</p>
       </div>
@@ -28,8 +29,8 @@ import Button from "../components/Button.astro";
     <div class="*:odd:bg-black/2">
       <div class="grid grid-cols-2 place-items-center px-40 py-32 gap-18">
         <!-- left -->
-        <div class="space-y-6 -rotate-1">
-          <h2 class="font-chango text-8xl mr-6">01</h2>
+        <div class="space-y-6 -rotate-1 hover:rotate-0 hover:scale-105 transition-transform relative">
+          <h2 class="font-chango text-shadow-xl text-8xl mr-6">01</h2>
           <p class="text-lead">
             We <ac>run polls</ac> and <ac>survey the community</ac> to
             understand the financial literacy perspective of members of our
@@ -40,20 +41,22 @@ import Button from "../components/Button.astro";
           </div>
         </div>
         <!-- right -->
-        <div class="p-6 pb-2 rounded-lg bg-white space-y-2 rotate-2">
+        <div class="p-6 pb-2 rounded-lg bg-white space-y-2 rotate-2 hover:rotate-0 hover:scale-105 transition-transform relative">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-green-300/40 rotate-3 w-32 h-8"></div>
           <Img src={banner} class="rounded-xl" />
           <p class="text-caption text-center">Add a caption here</p>
         </div>
       </div>
       <div class="grid grid-cols-2 place-items-center px-40 py-32 gap-24">
         <!-- left -->
-        <div class="p-6 pb-2 rounded-lg bg-white space-y-2 -rotate-2">
+        <div class="p-6 pb-2 rounded-lg bg-white space-y-2 -rotate-1 hover:rotate-0 hover:scale-105 transition-transform relative">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-100/80 -rotate-5 w-32 h-8"></div>
           <Img src={banner} class="rounded-xl" />
           <p class="text-caption text-center">Add a caption here</p>
         </div>
         <!-- right -->
-        <div class="space-y-6 rotate-1">
-          <h1 class="font-chango text-8xl">02</h1>
+        <div class="space-y-6 rotate-1 hover:rotate-0 hover:scale-105 transition-transform relative">
+          <h2 class="font-chango text-shadow-xl text-8xl">02</h2>
           <p class="text-lead">
             We hope to create a <ac>pilot program</ac> to experiment and try out
             the curriculum with teachers.
@@ -65,8 +68,8 @@ import Button from "../components/Button.astro";
       </div>
       <div class="grid grid-cols-2 place-items-center px-40 py-32 gap-18">
         <!-- left -->
-        <div class="space-y-6 -rotate-1">
-          <h1 class="font-chango text-8xl">03</h1>
+        <div class="space-y-6 -rotate-1 hover:rotate-0 hover:scale-105 transition-transform relative">
+          <h2 class="font-chango text-shadow-xl text-8xl">03</h2>
           <p class="text-lead">
             Our curriculum would be included in the FUHSD district via the{" "}
             <ac>Assembly Bill (AB) 2927</ac>, getting our curriculum into
@@ -77,7 +80,8 @@ import Button from "../components/Button.astro";
           </div>
         </div>
         <!-- right -->
-        <div class="p-6 pb-2 rounded-lg bg-white space-y-2 rotate-2">
+        <div class="p-6 pb-2 rounded-lg bg-white space-y-2 rotate-2 hover:rotate-0 hover:scale-105 transition-transform relative">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-lime-300/40 rotate-3 w-32 h-8"></div>
           <Img src={banner} class="rounded-xl" />
           <p class="text-caption text-center">Add a caption here</p>
         </div>
