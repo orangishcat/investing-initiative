@@ -4,10 +4,11 @@
 
 @theme {
     --color-text: oklch(14.85% 0.034 159.07);
-    --color-background: white;
+    --color-background: oklch(0.953 0.0156 86.43);
     --color-primary: oklch(0.3609 0.0591 191.51);
     --color-secondary: oklch(0.5759 0.1042 162.04);
     --color-accent: oklch(0.6945 0.1019 142.4);
+    --color-footer: oklch(0.1855 0.0357 150.62);
     --font-chango: "Chango", sans-serif;
 }
 
@@ -55,8 +56,20 @@
     }
 }
 
+html {
+    @apply text-[8px] md:text-[12px] lg:text-[16px];
+}
+
+footer {
+    @apply bg-footer;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
 body {
-    @apply bg-background;
+    @apply bg-footer;
     font-family:
         "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
         Arial, sans-serif;

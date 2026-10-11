@@ -1,0 +1,18 @@
+---
+import Img from "./Img.astro";
+import Button from "./Button.astro";
+import footerLogo from "../assets/logo_with_title_white.svg";
+import { withBase } from "../utils/url";
+---
+
+<footer class="px-32 py-16 text-white">
+  <div class="flex">
+    <div>
+      <Img src={footerLogo} height={64} />
+      <div class="pl-22 space-y-6 -mt-1">
+        <i class="text-green-100 text-xl">Financial education 4 all</i>
+        <p class="mt-6">A 501(c)(3) nonprofit</p>
+      </div>
+    </div>
+  </div>
+</footer>
