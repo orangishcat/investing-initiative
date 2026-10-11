@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Chango&display=swap");
+@import "tailwindcss";
+@source "../../node_modules/flowbite/lib/esm/components/carousel";
+
+@theme {
+    --color-text: oklch(14.85% 0.034 159.07);
+    --color-background: white;
+    --color-primary: oklch(0.3609 0.0591 191.51);
+    --color-secondary: oklch(0.5759 0.1042 162.04);
+    --color-accent: oklch(0.6945 0.1019 142.4);
+    --font-chango: "Chango", sans-serif;
+}
+
+@layer components {
+    h1 {
+        @apply text-7xl font-extrabold text-primary sm:text-5xl lg:text-6xl;
+        line-height: 1.1;
+    }
+
+    h2 {
+        @apply text-3xl font-bold tracking-tight text-primary sm:text-4xl;
+        line-height: 1.2;
+    }
+
+    h3 {
+        @apply text-2xl font-semibold leading-snug text-secondary sm:text-3xl;
+    }
+
+    h4 {
+        @apply text-xl font-semibold leading-snug text-accent;
+    }
+
+    ac {
+        @apply text-accent font-bold;
+    }
+
+    .text-body {
+        @apply text-base leading-relaxed text-text;
+    }
+
+    .text-lead {
+        @apply text-lg leading-relaxed text-text sm:text-xl;
+    }
+
+    .text-caption {
+        @apply text-sm leading-normal text-text/70;
+    }
+
+    .text-eyebrow {
+        @apply text-sm font-semibold uppercase tracking-widest text-secondary;
+    }
+
+    .text-link {
+        @apply font-medium text-primary underline decoration-primary/40 underline-offset-4 transition-colors hover:text-secondary hover:decoration-secondary focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary;
+    }
+}
+
+body {
+    @apply bg-background;
+    font-family:
+        "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+        Arial, sans-serif;
+
+    /* paper texture (todo: change to a better one) */
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.012) 0px,
+            rgba(0, 0, 0, 0.012) 1px,
+            transparent 1px,
+            transparent 4px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.008) 0px,
+            rgba(0, 0, 0, 0.008) 1px,
+            transparent 1px,
+            transparent 7px
+        ),
+        #f4efe4;
+}

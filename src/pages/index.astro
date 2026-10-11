@@ -1,16 +1,87 @@
 ---
+import Img from "../components/Img.astro";
+import Layout from "../components/Layout.astro";
+import banner from "../assets/banner.jpg";
+import Button from "../components/Button.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <div class="flex flex-col place-items-center justify-center">
+    <div class="grid grid-cols-2 place-items-center px-32 py-32 gap-18">
+      <!-- left -->
+      <div class="space-y-12">
+        <h1 class="text-8xl">
+          Financial literacy <span class="text-secondary">for all</span>
+        </h1>
+        <p class="text-lead">
+          We want to bring a <ac>financial literacy curriculum</ac> into school
+          districts by 2032 to help students understand how to manage money
+          effectively.
+        </p>
+      </div>
+      <!-- right -->
+      <div class="p-6 pb-2 rounded-lg bg-white space-y-2 rotate-2">
+        <Img src={banner} class="rounded-xl" />
+        <p class="text-caption text-center">Add a caption here</p>
+      </div>
+    </div>
+    <div class="*:odd:bg-black/2">
+      <div class="grid grid-cols-2 place-items-center px-40 py-32 gap-18">
+        <!-- left -->
+        <div class="space-y-6 -rotate-1">
+          <h2 class="font-chango text-8xl mr-6">01</h2>
+          <p class="text-lead">
+            We <ac>run polls</ac> and <ac>survey the community</ac> to
+            understand the financial literacy perspective of members of our
+            community.
+          </p>
+          <div class="flex gap-4">
+            <Button>See what we're up to</Button>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="p-6 pb-2 rounded-lg bg-white space-y-2 rotate-2">
+          <Img src={banner} class="rounded-xl" />
+          <p class="text-caption text-center">Add a caption here</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 place-items-center px-40 py-32 gap-24">
+        <!-- left -->
+        <div class="p-6 pb-2 rounded-lg bg-white space-y-2 -rotate-2">
+          <Img src={banner} class="rounded-xl" />
+          <p class="text-caption text-center">Add a caption here</p>
+        </div>
+        <!-- right -->
+        <div class="space-y-6 rotate-1">
+          <h1 class="font-chango text-8xl">02</h1>
+          <p class="text-lead">
+            We hope to create a <ac>pilot program</ac> to experiment and try out
+            the curriculum with teachers.
+          </p>
+          <div class="flex gap-4">
+            <Button>See what we're up to</Button>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 place-items-center px-40 py-32 gap-18">
+        <!-- left -->
+        <div class="space-y-6 -rotate-1">
+          <h1 class="font-chango text-8xl">03</h1>
+          <p class="text-lead">
+            Our curriculum would be included in the FUHSD district via the{" "}
+            <ac>Assembly Bill (AB) 2927</ac>, getting our curriculum into
+            schools by 2032.
+          </p>
+          <div class="flex gap-4">
+            <Button>See what we're up to</Button>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="p-6 pb-2 rounded-lg bg-white space-y-2 rotate-2">
+          <Img src={banner} class="rounded-xl" />
+          <p class="text-caption text-center">Add a caption here</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

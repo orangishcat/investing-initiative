@@ -12,6 +12,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.3.8"
+    "@astrojs/markdown-satteri": "^0.4.3",
+    "@astrojs/mdx": "^8.0.3",
+    "@lucide/astro": "^1.55.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.3.8",
+    "flowbite": "^4.0.2",
+    "tailwindcss": "^4.3.3"
   }
 }
