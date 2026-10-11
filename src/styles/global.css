@@ -4,7 +4,11 @@
 
 @theme {
     --color-text: oklch(14.85% 0.034 159.07);
-    --color-background: oklch(0.953 0.0156 86.43);
+    --color-background-50: oklch(0.98 0.0156 86.43);
+    --color-background-100: oklch(0.953 0.0156 86.43);
+    --color-background-110: oklch(0.94 0.0156 86.43);
+    --color-background-120: oklch(0.93 0.025 86.43);
+    --color-background: var(--color-background-100);
     --color-primary: oklch(0.3609 0.0591 191.51);
     --color-secondary: oklch(0.5759 0.1042 162.04);
     --color-accent: oklch(0.6945 0.1019 142.4);

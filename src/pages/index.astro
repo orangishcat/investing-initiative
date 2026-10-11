@@ -18,72 +18,126 @@ import Button from "../components/Button.astro";
           districts by 2032 to help students understand how to manage money
           effectively.
         </p>
+        <Button>See what we're up to</Button>
       </div>
       <!-- right -->
-      <div class="p-6 pb-2 rounded-lg bg-white space-y-2 rotate-2 hover:rotate-0 hover:scale-105 transition-transform relative">
-        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-green-200/80 w-32 h-8"></div>
+      <div>
         <Img src={banner} class="rounded-xl" />
         <p class="text-caption text-center">Add a caption here</p>
       </div>
     </div>
-    <div class="*:odd:bg-black/2">
-      <div class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 place-items-center px-40 py-32 gap-18">
-        <!-- left -->
-        <div class="space-y-6 -rotate-1 hover:rotate-0 hover:scale-105 transition-transform relative">
-          <h2 class="font-chango text-shadow-xl text-8xl mr-6">01</h2>
-          <p class="text-lead">
-            We <ac>run polls</ac> and <ac>survey the community</ac> to
-            understand the financial literacy perspective of members of our
-            community.
-          </p>
-          <div class="flex gap-4">
-            <Button>See what we're up to</Button>
+    <div class="bg-background-110 w-full flex flex-col place-items-center justify-center gap-16 px-16 pt-24 pb-64">
+      <h1 class="text-center">Our plan</h1>
+      <div
+        class="flex flex-col gap-32 *:odd:-rotate-1 *:even:rotate-1 *:relative *:max-w-7xl *:grid *:grid-rows-2 *:md:grid-rows-1
+      *:md:grid-cols-2 *:place-items-center *:m-8 *:px-24 *:py-16 *:gap-18 *:bg-background-50 *:rounded-xl"
+      >
+        <div>
+          <!-- left -->
+          <div class="space-y-6">
+            <h2 class="font-chango text-shadow-xl text-8xl mr-6">
+              01 <span class="text-eyebrow">Data collection</span>
+            </h2>
+            <p class="text-lead">
+              We <ac>run polls</ac> and <ac>survey the community</ac> to
+              understand the financial literacy perspective of members of our
+              community.
+            </p>
+            <div class="flex gap-4">
+              <Button>See what we're up to</Button>
+            </div>
           </div>
-        </div>
-        <!-- right -->
-        <div class="p-6 pb-2 rounded-lg bg-white space-y-2 rotate-2 hover:rotate-0 hover:scale-105 transition-transform relative">
-          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-green-300/40 rotate-3 w-32 h-8"></div>
-          <Img src={banner} class="rounded-xl" />
-          <p class="text-caption text-center">Add a caption here</p>
-        </div>
-      </div>
-      <div class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 place-items-center px-40 py-32 gap-24">
-        <!-- left -->
-        <div class="p-6 pb-2 rounded-lg bg-white space-y-2 -rotate-1 hover:rotate-0 hover:scale-105 transition-transform relative">
-          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-100/80 -rotate-5 w-32 h-8"></div>
-          <Img src={banner} class="rounded-xl" />
-          <p class="text-caption text-center">Add a caption here</p>
-        </div>
-        <!-- right -->
-        <div class="space-y-6 rotate-1 hover:rotate-0 hover:scale-105 transition-transform relative">
-          <h2 class="font-chango text-shadow-xl text-8xl">02</h2>
-          <p class="text-lead">
-            We hope to create a <ac>pilot program</ac> to experiment and try out
-            the curriculum with teachers.
-          </p>
-          <div class="flex gap-4">
-            <Button>See what we're up to</Button>
+          <!-- right -->
+          <div>
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-green-300/40 rotate-3 w-32 h-8"></div>
+            <Img src={banner} class="rounded-xl" />
+            <p class="text-caption text-center">Add a caption here</p>
           </div>
+          <svg
+            class="pointer-events-none absolute top-full left-0 h-48 w-full overflow-visible text-secondary"
+            viewBox="0 0 1000 192"
+            preserveAspectRatio="none"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path
+              d="M250 0 C250 96 750 96 750 192"
+              stroke-dasharray="8 9"
+              vector-effect="non-scaling-stroke"
+            />
+            <path
+              d="M740 178 L750 192 L760 178"
+              vector-effect="non-scaling-stroke"
+            />
+          </svg>
         </div>
-      </div>
-      <div class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 place-items-center px-40 py-32 gap-18">
-        <!-- left -->
-        <div class="space-y-6 -rotate-1 hover:rotate-0 hover:scale-105 transition-transform relative">
-          <h2 class="font-chango text-shadow-xl text-8xl">03</h2>
-          <p class="text-lead">
-            Our curriculum would be included in the FUHSD district via the{" "}
-            <ac>Assembly Bill (AB) 2927</ac>, getting our curriculum into
-            schools by 2032.
-          </p>
-          <div class="flex gap-4">
-            <Button>See what we're up to</Button>
+        <div class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 place-items-center px-40 py-32 gap-24">
+          <!-- left -->
+          <div class="p-6 pb-2 rounded-lg bg-white space-y-2">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-100/80 -rotate-5 w-32 h-8"></div>
+            <Img src={banner} class="rounded-xl" />
+            <p class="text-caption text-center">Add a caption here</p>
           </div>
+          <!-- right -->
+          <div class="space-y-6">
+            <h2 class="font-chango text-shadow-xl text-8xl">
+              02 <span class="text-eyebrow">Pilot program</span>
+            </h2>
+            <p class="text-lead">
+              We hope to create a <ac>pilot program</ac> to experiment and try
+              out the curriculum with teachers.
+            </p>
+            <div class="flex gap-4">
+              <Button>See what we're up to</Button>
+            </div>
+          </div>
+          <svg
+            class="pointer-events-none absolute top-full left-0 h-48 w-full overflow-visible text-secondary"
+            viewBox="0 0 1000 192"
+            preserveAspectRatio="none"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path
+              d="M750 0 C750 96 250 96 250 192"
+              stroke-dasharray="8 9"
+              vector-effect="non-scaling-stroke"
+            />
+            <path
+              d="M240 178 L250 192 L260 178"
+              vector-effect="non-scaling-stroke"
+            />
+          </svg>
         </div>
-        <!-- right -->
-        <div class="p-6 pb-2 rounded-lg bg-white space-y-2 rotate-2 hover:rotate-0 hover:scale-105 transition-transform relative">
-          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-lime-300/40 rotate-3 w-32 h-8"></div>
-          <Img src={banner} class="rounded-xl" />
-          <p class="text-caption text-center">Add a caption here</p>
+        <div class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 place-items-center px-40 py-32 gap-18">
+          <!-- left -->
+          <div class="space-y-6">
+            <h2 class="font-chango text-shadow-xl text-8xl">
+              03 <span class="text-eyebrow">Into schools</span>
+            </h2>
+            <p class="text-lead">
+              Our curriculum would be included in the FUHSD district via the{" "}
+              <ac>Assembly Bill (AB) 2927</ac>, getting our curriculum into
+              schools by 2032.
+            </p>
+            <div class="flex gap-4">
+              <Button>See what we're up to</Button>
+            </div>
+          </div>
+          <!-- right -->
+          <div>
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-lime-300/40 rotate-3 w-32 h-8"></div>
+            <Img src={banner} class="rounded-xl" />
+            <p class="text-caption text-center">Add a caption here</p>
+          </div>
         </div>
       </div>
     </div>
