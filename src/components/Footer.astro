@@ -5,10 +5,10 @@ import footerLogo from "../assets/logo_with_title_white.svg";
 import { withBase } from "../utils/url";
 ---
 
-<footer class="px-32 py-16 text-white">
+<footer class="px-32 pt-16 pb-32 text-white">
   <div class="flex gap-32">
     <div>
-      <Img src={footerLogo} height={64} />
+      <Img src={footerLogo} class="h-16" />
       <div class="pl-22 space-y-6 -mt-1">
         <i class="text-green-100 text-xl">Financial education 4 all</i>
         <p class="mt-6">A 501(c)(3) nonprofit</p>
@@ -17,7 +17,7 @@ import { withBase } from "../utils/url";
     <div class="space-y-2 text-xl">
       <div class="font-bold">Investing Initiative</div>
       <div class="space-y-1 *:block *:hover:underline text-gray-200 text-lg">
-        <a href="/joinus">Join us</a>
+        <a href={withBase("/joinus")}>Join us</a>
         <a
           href="https://github.com/orangishcat/investing-initiative"
           target="_blank"
